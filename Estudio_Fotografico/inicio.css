@@ -1,0 +1,292 @@
+*{/*Para eliminar cosas preterminadas*/
+    padding: 0; 
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{/*Es para el color de fondo y tamaño del menu*/
+    background-image:repeating-linear-gradient(rgb(82, 0, 53),rgb(57, 0, 126));
+    height: 90px;
+    width: 100%;
+    position:static;
+
+   
+}
+/*Clases:*/
+.enlace{/*Es de la clase de enlace*/
+    position: absolute;
+    padding: 20px 50px;
+}
+/* Estilos para la pagina principal */
+.principal {
+    padding: 10px;
+    text-align:center;
+    background-image: linear-gradient(rgb(243, 81, 170),rgb(237, 45, 128));
+    font-family: 'Goudy Old Style', sans-serif;
+    
+}
+.principal h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Goudy Old Style', sans-serif;
+}
+.principal p{
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Poor Richard', sans-serif;
+    display: flex;
+    
+}
+/* Estilos para paginas secundarias */
+.secundario{
+    padding: 30px;
+
+}
+.secundario h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(138, 0, 34);
+    
+}
+.secundario h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: rgb(66, 0, 52);
+    text-align: center;
+    border-radius: 20px;
+}
+.secundario p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Poor Richard', sans-serif;
+    border-radius: 5px;
+    position:static;
+}
+
+.secundario img{
+    margin-top: auto;
+    border-radius: 10px;
+    margin : 10px;     
+} 
+
+
+.logo{  /*Es la clase del logo*/
+    width: 80px;
+    margin :20px;
+    padding: 5px;
+
+    transform: translateX(10%) translateY(-20px);
+    cursor: default;
+}
+.logo:hover {
+    cursor:auto;
+}
+nav ul{/*Es para el codigo dentro de la etiqueta ul*/
+    float: right;
+    margin-right: 600px;
+    overflow: auto;
+}
+nav ul li{/*Es para el codigo dentro de la etiquta li*/
+    display: inline-block;
+    line-height: 80px;
+    margin: 5px;
+    
+}
+nav ul li a{/*Es para el codigo a*/
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px; /*Establece un relleno arriba, abajo y los lados*/
+    border-radius: 20px; /*Aplica un borde redondeado de 20 píxeles a los enlaces.*/
+    text-transform: uppercase; /*Convierte el texto a mayusculas*/
+}
+
+li a:hover{ /*Es cuando el usuario pasa el mouse sobre ellos*/
+    background: #440030;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+.menu :hover{
+    color: rgb(152, 115, 181);
+}
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:absolute;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgb(152, 115, 181),rgb(211, 121, 160));
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background:white;
+        color: rgb(53, 0, 25);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+/* Actualización de colores y diseño atractivo */
+body {
+    background-color: rgb(251, 197, 197); /* Fondo principal */
+    color: rgb(136, 121, 176); /* Color de texto principal */
+    font-family: 'Goudy Old Style', sans-serif; /* Tipografía limpia y moderna */
+    font-size: medium;
+}
+
+/* Gradiente en el menú */
+nav {
+    background-image: linear-gradient(to right, rgb(136, 121, 176), rgb(55, 125, 113));
+    height: 90px;
+
+}
+
+/* Estilo de enlaces en el menú */
+nav ul li a {
+    color: rgb(251, 197, 197); /* Color de texto de los enlaces */
+    background-color: rgb(55, 125, 113); /* Fondo para enlaces */
+    transition: all 0.3s ease;
+    margin: 5px;
+    
+}
+nav ul li a:hover {
+    background-color: rgb(251, 161, 161); /* Fondo al pasar el mouse */
+    color: rgb(136, 121, 176); /* Texto al pasar el mouse */
+}
+
+/* Sección principal con gradiente */
+.principal {
+    background-image: linear-gradient(to bottom, rgb(251, 161, 161), rgb(136, 121, 176));
+    color: rgb(0, 0, 0);
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra decorativa */
+}
+
+/* Títulos */
+.principal h1, .secundario h1 {
+    color: rgb(55, 125, 113);
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(70, 66, 84);
+}
+.nf{
+    background-image: linear-gradient(to bottom, rgb(251, 161, 161), rgb(136, 121, 176));
+    color:#fff ;
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(70, 66, 84);
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.text{
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Poor Richard', sans-serif;
+    display: flex;
+    color: black;
+
+}
+
+
+/* Fondo de secciones secundarias */
+.secundario {
+    background-color: rgb(136, 121, 176);
+    color: rgb(251, 197, 197);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes */
+.secundario img {
+    border: 4px solid rgb(55, 125, 113);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    
+
+}
+
+.galeria .item {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 10px rgb(136, 121, 176);
+    
+}
+
+.galeria .item img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+.galeria .item:hover {
+    transform: scale(1.05);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Responsividad */
+@media (max-width: 858px) {
+
+    nav ul li a {
+        color: rgb(55, 125, 113);
+    }
+}

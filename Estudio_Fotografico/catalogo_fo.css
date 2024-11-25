@@ -1,0 +1,130 @@
+
+
+*{
+    padding: 0; 
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Cooper Black', sans-serif; 
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body{
+
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-color: rgb(251, 197, 197);
+
+}
+h1{
+    background-image: linear-gradient(to bottom, rgb(251, 161, 161), rgb(136, 121, 176)) ;
+    margin: 5px;
+    font-family: 'Goudy Old Style', sans-serif;
+    color:#fff ;
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(70, 66, 84);
+}
+.card-wrapper{
+    max-width: 3000px;
+    margin:0 40px 55px ;
+    padding: 50px 0px ;
+    overflow: hidden;
+}
+
+
+
+
+.card_list .items .ref{
+user-select: none;
+display: block;
+background:rgb(136, 121, 176);
+padding: 5px;
+border-radius:12px ;
+border-color: #050505;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+.card_list .items .ref:active{
+    cursor:grabbing;
+}
+.card_list .ref .ima{ 
+    width:100%;
+    aspect-ratio: 40 / 50;
+    object-fit:fill;
+    border-radius: 10px;
+}
+
+.card_list .ref .text{
+    padding: 3px 16px;
+    font-size: 0.5 rem;
+    font-weight: 600;
+    margin: 16px 0 18px;
+    background-color: rgb(67, 10, 117);
+    width: fit-content;
+    border-radius: 25px;
+    color: #ffff; 
+    background: rgb(55, 125, 113);
+    font-family: 'Goudy Old Style', sans-serif;
+}
+
+.card_list .ref .text.peru{
+    color: #ffff; 
+    background: rgb(55, 125, 113);
+    font-family: 'Goudy Old Style', sans-serif;
+}
+
+.card_list .ref .text.cancun{
+    color: #ffff; 
+    background: rgb(55, 125, 113); 
+    font-family: 'Goudy Old Style', sans-serif;   
+}
+
+.card_list .ref .text.val{
+    color: #ffff; 
+    background: rgb(55, 125, 113);   
+    font-family: 'Goudy Old Style', sans-serif;
+}
+
+
+.card_list .ref .titulo{
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+
+}
+
+
+.ref :hover{
+    border: #5721eb;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+   height: 13px; 
+   width: 13px;
+   background: transparent;
+}
+.card-wrapper .swipper-slide-button{
+    color:rgb(55, 125, 113);
+
+}
+
+@media screen and (max-width: 768px){
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swipper-slide-button{
+        display: none;
+
+    }
+}
+    

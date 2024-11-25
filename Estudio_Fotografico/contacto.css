@@ -1,0 +1,107 @@
+*{/*Para eliminar cosas preterminadas*/
+    padding: 0; 
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* Reset */
+body, ul, h1, h2, p, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(251, 197, 197);
+    color: rgb(55, 125, 113);
+    padding: 0 15px;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: rgb(55, 125, 113);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+    color: rgb(136, 121, 176);
+    display: block;
+
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(136, 121, 176);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: rgb(55, 125, 113);
+    color: rgb(251, 197, 197);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(251, 161, 161);
+    color: rgb(55, 125, 113);
+}
+
+.social-media h2 {
+    font-size: 24px;
+    color: rgb(55, 125, 113);
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: rgb(251, 197, 197);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: rgb(55, 125, 113);
+}

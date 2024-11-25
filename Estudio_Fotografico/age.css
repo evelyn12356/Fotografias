@@ -1,0 +1,69 @@
+body {
+    font-family: 'Goudy Old Style', sans-serif;
+    background-color: rgb(251, 197, 197); /* Fondo principal */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255); /* Fondo blanco para contenedor */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    background-image: linear-gradient(to bottom, rgb(251, 161, 161), rgb(136, 121, 176));
+    color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px rgb(70, 66, 84);
+    font-size: 40px;
+}
+    
+
+  h2 {
+    text-align: center;
+    color: rgb(55, 125, 113); /* Título con color verde oscuro */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: rgb(136, 121, 176); /* Color sutil para etiquetas */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(136, 121, 176); /* Borde en color morado claro */
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: rgb(55, 125, 113); /* Fondo verde para el botón */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(251, 161, 161); /* Color de fondo del botón al pasar el ratón */
+  }
+
+
+
